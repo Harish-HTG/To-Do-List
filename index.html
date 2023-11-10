@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-Do List</title>
+    <link rel="icon" href="Images/Icon.png">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,15 +17,19 @@
         <div class="todo-app">
             <h2>To-Do List <img src="Images/Icon.png"></h2>
             <div class="row">
-                <input type="text" id="input-box" placeholder="Add Your Task">
-                <button onclick="addTask()">Add</button>
+                <input type="text" onkeypress="handleKeyPress(event)" id="input-box" placeholder="Add Your Task">
+                <button id="add" onclick="addTask()">Add</button>
             </div>
-            <ul id="list-container">
-
-            </ul>
+            <ul id="list-container"></ul>
+        </div>
+        <div class="date-time">
+            <p id="date"></p>
+            <p id="time"></p>
         </div>
     </div>
+    
     <script src="script.js"></script>
+
 </body>
 
 </html>

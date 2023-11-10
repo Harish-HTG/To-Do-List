@@ -81,7 +81,7 @@ ul li::before{
     background-image: url(Images/Unchecked.png);
     background-size: cover;
     background-position: center;
-    top: 12px;
+    top: 14px;
     left: 8px;
 }
 
@@ -108,5 +108,13 @@ ul li span{
 }
 
 ul li span:hover{
-    background: #edeef0;
+    background: linear-gradient(135deg, #153677, #4e085f);
+    color: #fff;
+}
+
+.date-time{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    color: #fff;
 }
